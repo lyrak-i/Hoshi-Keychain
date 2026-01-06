@@ -31,6 +31,428 @@
                 
                 <!-- Logo Area -->
                 <div class="flex items-center gap-2 cursor-pointer hover:-rotate-2 transition-transform">
+                    <img src="Logo Hoshi keychain.svg" style="width: 100px;">
+                    <span class="text-3xl font-black italic tracking-tighter">HOSHI KEYCHAIN</span>
+                </div>
+                
+                <!-- Desktop Nav -->
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="#how-it-works" class="font-bold text-sm uppercase hover:bg-yellow-300 hover:px-2 transition-all duration-200">Cara Pesan</a>
+                    <a href="#artists" class="font-bold text-sm uppercase hover:bg-pink-300 hover:px-2 transition-all duration-200">Artist List</a>
+                    <a href="#gallery" class="font-bold text-sm uppercase hover:bg-blue-300 hover:px-2 transition-all duration-200">Galeri</a>
+                    
+                    <!-- Updated: Now a clickable WhatsApp link -->
+                    <a href="https://wa.me/6282181963337?text=Halo%20Admin%20Hoshi%2C%20saya%20mau%20cek%20status%20order%20saya." target="_blank" class="bg-black text-white px-6 py-3 font-bold border-2 border-transparent hover:bg-white hover:text-black hover:border-black hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all">
+                        CEK STATUS ORDER
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Toggle -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="p-2 border-2 border-black shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] active:shadow-none active:translate-x-[3px] active:translate-y-[3px] transition-all bg-white">
+                        <i data-lucide="menu" size="24"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-yellow-300 border-b-4 border-black p-6 space-y-4">
+            <a href="#how-it-works" class="block font-black text-xl uppercase">Cara Pesan</a>
+            <a href="#artists" class="block font-black text-xl uppercase">Artist Kami</a>
+            <a href="#gallery" class="block font-black text-xl uppercase">Galeri</a>
+            <a href="https://wa.me/6282181963337?text=Halo%20Admin%20Hoshi%2C%20saya%20mau%20cek%20status%20order%20saya." class="block w-full text-center bg-black text-white py-4 font-bold uppercase shadow-[4px_4px_0px_0px_rgba(255,255,255,1)]">
+                Cek Status Order
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION: COMIC BOOK STYLE -->
+    <div class="relative overflow-hidden border-b-4 border-black bg-white">
+        <!-- Halftone Pattern Background (CSS Trick) -->
+        <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle, #000 1px, transparent 1px); background-size: 20px 20px;"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 py-20 relative z-10">
+            <div class="text-center mb-16">
+                <div class="inline-block bg-yellow-300 border-2 border-black px-4 py-1 font-bold text-xs uppercase mb-6 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] rotate-[-2deg]">
+                    ★ Official Anime Merch Hub ★
+                </div>
+                <h1 class="text-6xl md:text-8xl font-black leading-none mb-6 uppercase tracking-tighter">
+                    Make Your <br/>
+                    <span class="text-white bg-black px-4 italic transform -skew-x-12 inline-block">Waifu</span> Real.
+                </h1>
+                <p class="text-xl font-bold text-gray-800 max-w-2xl mx-auto">
+                    Custom Acrylic Keychains. Anime Style. 
+                    <br/>Premium Quality from Palembang, Indonesia.
+                </p>
+            </div>
+
+            <!-- THE SPLIT DECISION: CARDS -->
+            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                
+                <!-- OPTION A: UPLOAD -->
+                <div class="group relative bg-blue-50 border-4 border-black p-8 hover:-translate-y-2 hover:shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] transition-all duration-200">
+                    <div class="absolute top-4 right-4 bg-blue-500 text-white font-bold px-3 py-1 border-2 border-black text-xs uppercase">
+                        Path A
+                    </div>
+                    <div class="w-20 h-20 bg-white border-2 border-black flex items-center justify-center mb-6 shadow-[4px_4px_0px_0px_rgba(59,130,246,1)]">
+                        <i data-lucide="upload" size="32"></i>
+                    </div>
+                    <h2 class="text-4xl font-black uppercase mb-2">Upload Art</h2>
+                    <p class="font-medium text-gray-700 mb-8 border-l-4 border-blue-500 pl-4">
+                        Sudah punya gambar transparan (.PNG)? Upload disini, kami yang cetak & cutting.
+                    </p>
+                    <a href="https://wa.me/6282181963337?text=Halo%2C%20saya%20mau%20print%20gantungan%20kunci%20custom." target="_blank" class="block w-full text-center bg-blue-500 text-white border-2 border-black py-4 font-black uppercase text-lg hover:bg-blue-400 flex items-center justify-center gap-2">
+                        Start Upload <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                    </a>
+                </div>
+
+                <!-- OPTION B: COMMISSION -->
+                <div class="group relative bg-pink-50 border-4 border-black p-8 hover:-translate-y-2 hover:shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] transition-all duration-200">
+                    <div class="absolute top-4 right-4 bg-pink-500 text-white font-bold px-3 py-1 border-2 border-black text-xs uppercase">
+                        Path B
+                    </div>
+                    <div class="w-20 h-20 bg-white border-2 border-black flex items-center justify-center mb-6 shadow-[4px_4px_0px_0px_rgba(236,72,153,1)]">
+                        <i data-lucide="paintbrush" size="32"></i>
+                    </div>
+                    <h2 class="text-4xl font-black uppercase mb-2">Commission</h2>
+                    <p class="font-medium text-gray-700 mb-8 border-l-4 border-pink-500 pl-4">
+                        Belum bisa gambar? Hire artist pro kami. Terima beres dari sketsa sampai jadi.
+                    </p>
+                    <a href="#artists" class="block w-full text-center bg-pink-500 text-white border-2 border-black py-4 font-black uppercase text-lg hover:bg-pink-400 flex items-center justify-center gap-2">
+                        Hire Artist <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- CARA PESAN SECTION (Updated) -->
+    <section id="how-it-works" class="border-b-4 border-black bg-yellow-300 py-20 relative">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-5xl font-black uppercase italic tracking-tighter text-center mb-16">
+                CARA PESAN
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center relative z-10">
+                
+                <!-- Step 1 -->
+                <div class="flex flex-col items-center group">
+                    <div class="bg-white p-6 border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] mb-6 group-hover:-translate-y-2 transition-transform">
+                        <i data-lucide="mouse-pointer-click" size="40" stroke-width="2.5"></i>
+                    </div>
+                    <h3 class="font-black uppercase text-2xl tracking-wide mb-2">1. Pilih Jalur</h3>
+                    <p class="font-bold text-sm px-4">Upload gambar sendiri ATAU pilih Artist Commission.</p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="flex flex-col items-center group">
+                    <div class="bg-white p-6 border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] mb-6 group-hover:-translate-y-2 transition-transform">
+                        <i data-lucide="message-circle" size="40" stroke-width="2.5"></i>
+                    </div>
+                    <h3 class="font-black uppercase text-2xl tracking-wide mb-2">2. Chat WA</h3>
+                    <p class="font-bold text-sm px-4">Konsultasi detail, jumlah, dan konfirmasi pembayaran.</p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="flex flex-col items-center group">
+                    <div class="bg-white p-6 border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] mb-6 group-hover:-translate-y-2 transition-transform">
+                        <i data-lucide="factory" size="40" stroke-width="2.5"></i>
+                    </div>
+                    <h3 class="font-black uppercase text-2xl tracking-wide mb-2">3. Produksi</h3>
+                    <p class="font-bold text-sm px-4">Proses cetak & laser cut (3-7 hari kerja).</p>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="flex flex-col items-center group">
+                    <div class="bg-white p-6 border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] mb-6 group-hover:-translate-y-2 transition-transform">
+                        <i data-lucide="package-check" size="40" stroke-width="2.5"></i>
+                    </div>
+                    <h3 class="font-black uppercase text-2xl tracking-wide mb-2">4. Kirim</h3>
+                    <p class="font-bold text-sm px-4">Barang dikirim via JNE/J&T ke seluruh Indonesia.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ARTIST ROSTER -->
+    <section class="py-20 bg-white border-b-4 border-black" id="artists">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-4">
+                <h2 class="text-5xl font-black uppercase italic tracking-tighter">
+                    Artist Roster
+                </h2>
+                <div class="bg-black text-white px-4 py-2 font-bold uppercase rotate-2" id="current-date">
+                    Updated: <script>document.write(new Date().toLocaleDateString())</script>
+                </div>
+            </div>
+
+            <!-- Changed grid to 2 columns and centered -->
+            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                
+                <!-- Artist 1: Lyrak -->
+                <div class="bg-white border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all">
+                    <div class="h-64 w-full bg-indigo-400 border-b-4 border-black flex items-center justify-center relative overflow-hidden">
+                    <img 
+                    src="ceobe.png" 
+                    alt="My Image" 
+                    class="absolute inset-0 w-full h-full object-cover object-[50%_50%]"
+                    />
+
+                    <div class="absolute inset-0 opacity-20 pointer-events-none" style="background-image: radial-gradient(#000 10%, transparent 10%); background-size: 10px 10px;"></div>
+
+                    <div class="absolute top-4 left-4 border-2 border-black px-3 py-1 font-bold text-xs uppercase shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] bg-green-400">
+                        OPEN
+                    </div>
+                    
+                </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-black uppercase mb-1">Lyrak</h3>
+                        <p class="text-sm font-bold bg-black text-white inline-block px-2 mb-4">Lineless Anime</p>
+                        <div class="space-y-2 mb-6 font-mono text-sm border-t-2 border-black pt-4">
+                            <div class="flex justify-between">
+                                <span>Turnaround:</span>
+                                <span class="font-bold">7-14 Days</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Starts From:</span>
+                                <span class="font-bold">Rp 150.000</span>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/6282280481201?text=Halo%2C%20saya%20mau%20commission%20artist%20Lyrak" target="_blank" class="block w-full text-center py-3 border-2 border-black font-black uppercase transition-colors bg-yellow-300 hover:bg-yellow-400 text-black">
+                            Commission Now
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Artist 2: ToRiGa -->
+                <div class="bg-white border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all">
+                    <div class="h-64 w-full bg-orange-400 border-b-4 border-black flex items-center justify-center relative overflow-hidden">
+    
+                        <img 
+                        src="https://pbs.twimg.com/media/G70dh9GaMAUU0iX?format=jpg&name=4096x4096" 
+                        alt="Limited Slot" 
+                        class="absolute inset-0 w-full h-full object-cover object-top"
+                        />
+
+                        <div class="absolute inset-0 opacity-20 pointer-events-none" style="background-image: radial-gradient(#000 10%, transparent 10%); background-size: 10px 10px;"></div>
+
+                        <div class="absolute top-4 left-4 border-2 border-black px-3 py-1 font-bold text-xs uppercase shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] bg-yellow-300">
+                            LIMITED SLOT
+                        </div>
+
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-black uppercase mb-1">ToRiGa</h3>
+                        <p class="text-sm font-bold bg-black text-white inline-block px-2 mb-4">Anime</p>
+                        <div class="space-y-2 mb-6 font-mono text-sm border-t-2 border-black pt-4">
+                            <div class="flex justify-between">
+                                <span>Turnaround:</span>
+                                <span class="font-bold">7-10 Days</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Starts From:</span>
+                                <span class="font-bold">Rp 150.000</span>
+                            </div>
+                        </div>
+                        <!-- Updated: Now a clickable WhatsApp link for waitlist -->
+                        <a href="https://wa.me/628989842900?text=Halo%20Admin%2C%20saya%20mau%20join%20waitlist%20untuk%20artist%20ToRiGa." target="_blank" class="block w-full text-center py-3 border-2 border-black font-black uppercase transition-colors bg-white hover:bg-gray-100 text-black">
+                            Join Waitlist
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- GALERI SECTION (New) -->
+    <section id="gallery" class="py-20 bg-blue-50 border-b-4 border-black">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-5xl font-black uppercase italic tracking-tighter text-center mb-16">
+                GALERI PRODUK
+            </h2>
+            
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            
+            <div class="group relative aspect-square bg-white border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:rotate-2 hover:scale-105 transition-all duration-300 cursor-pointer overflow-hidden">
+                <img 
+                    src="1.jpg" 
+                    alt="Order #001" 
+                    class="absolute inset-0 w-full h-full object-cover"
+                />
+                
+                <div class="absolute bottom-0 left-0 right-0 bg-black text-white p-2 font-bold text-xs uppercase text-center translate-y-full group-hover:translate-y-0 transition-transform">
+                    Order #001
+                </div>
+            </div>
+
+            <div class="group relative aspect-square bg-white border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:-rotate-2 hover:scale-105 transition-all duration-300 cursor-pointer overflow-hidden">
+                <img 
+                    src="2.jpg" 
+                    alt="Order #002" 
+                    class="absolute inset-0 w-full h-full object-cover"
+                />
+                
+                <div class="absolute bottom-0 left-0 right-0 bg-black text-white p-2 font-bold text-xs uppercase text-center translate-y-full group-hover:translate-y-0 transition-transform">
+                    Order #002
+                </div>
+            </div>
+
+            <div class="group relative aspect-square bg-white border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:rotate-1 hover:scale-105 transition-all duration-300 cursor-pointer overflow-hidden">
+                <img 
+                    src="3.jpg" 
+                    alt="Order #003" 
+                    class="absolute inset-0 w-full h-full object-cover"
+                />
+
+                <div class="absolute bottom-0 left-0 right-0 bg-black text-white p-2 font-bold text-xs uppercase text-center translate-y-full group-hover:translate-y-0 transition-transform">
+                    Order #003
+                </div>
+            </div>
+
+            <div class="group relative aspect-square bg-white border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:-rotate-1 hover:scale-105 transition-all duration-300 cursor-pointer overflow-hidden">
+                <img 
+                    src="4.jpg" 
+                    alt="Order #004" 
+                    class="absolute inset-0 w-full h-full object-cover"
+                />
+
+                <div class="absolute bottom-0 left-0 right-0 bg-black text-white p-2 font-bold text-xs uppercase text-center translate-y-full group-hover:translate-y-0 transition-transform">
+                    Order #004
+                </div>
+            </div>
+
+        </div>
+            
+            <div class="text-center mt-12">
+                <a href="https://instagram.com" target="_blank" class="inline-block bg-white border-4 border-black px-8 py-3 font-black uppercase hover:bg-black hover:text-white transition-colors">
+                    Lihat Semua di Instagram
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- TECH SPECS (Translated) -->
+    <section class="bg-black text-white py-20 border-b-4 border-black">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-4xl font-black uppercase mb-12 text-center text-yellow-400">
+                DETAIL SPESIFIKASI
+            </h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Spec 1 -->
+                <div class="bg-white text-black p-8 border-4 border-white md:border-transparent hover:border-yellow-400 transition-colors">
+                    <i data-lucide="shield-check" size="40" class="mb-4"></i>
+                    <h3 class="text-xl font-black uppercase mb-2">Akrilik Double Board</h3>
+                    <p class="text-sm">Konstruksi sandwich. Gambar diapit dua lapis akrilik 3mm (Total tebal 6mm). Gambar anti gores & awet selamanya.</p>
+                </div>
+                <!-- Spec 2 -->
+                <div class="bg-white text-black p-8 border-4 border-white md:border-transparent hover:border-yellow-400 transition-colors">
+                    <i data-lucide="star" size="40" class="mb-4"></i>
+                    <h3 class="text-xl font-black uppercase mb-2">Spesialis Anime</h3>
+                    <p class="text-sm">Kami menolak file non-anime. Warna dikalibrasi (CMYK) khusus agar skin tone karakter dan warna rambut tetap cerah.</p>
+                </div>
+                <!-- Spec 3 -->
+                <div class="bg-white text-black p-8 border-4 border-white md:border-transparent hover:border-yellow-400 transition-colors">
+                    <i data-lucide="heart" size="40" class="mb-4"></i>
+                    <h3 class="text-xl font-black uppercase mb-2">Opsi Hologram</h3>
+                    <p class="text-sm">Tersedia lapisan Epoxy (Cembung) atau efek Hologram (Star/Broken Glass). Gratis untuk pemesanan > 50pcs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-white py-12">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-start gap-8">
+            <div class="max-w-sm">
+                <h4 class="text-2xl font-black italic tracking-tighter mb-4">HOSHI KEYCHAIN</h4>
+                <p class="font-bold text-sm text-gray-600 mb-6">
+                    Indonesia's #1 Anime Keychain Maker. <br/>
+                    Based in Palembang, South Sumatera.
+                </p>
+                <div class="flex gap-4">
+                    <!-- Added explicit sizing classes (w-5 h-5) to ensure icons render correctly -->
+                    <a href="#" class="w-10 h-10 bg-black border-2 border-black text-white hover:bg-white hover:text-black flex items-center justify-center transition-colors">
+                        <i data-lucide="instagram" class="w-5 h-5"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 bg-black border-2 border-black text-white hover:bg-white hover:text-black flex items-center justify-center transition-colors">
+                        <i data-lucide="twitter" class="w-5 h-5"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 bg-black border-2 border-black text-white hover:bg-white hover:text-black flex items-center justify-center transition-colors">
+                        <i data-lucide="facebook" class="w-5 h-5"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="text-right">
+                <a href="https://wa.me/6281234567890" target="_blank" class="inline-block bg-green-100 border-2 border-black px-4 py-2 font-bold mb-4 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] transition-all text-black">
+                    WA: +62 821-8196-3337
+                </a>
+                <ul class="space-y-2 font-bold uppercase text-sm">
+                    <li><a href="#" class="hover:underline decoration-4 decoration-yellow-400">Upload Design</a></li>
+                    <li><a href="#" class="hover:underline decoration-4 decoration-yellow-400">Track Order</a></li>
+                    <li><a href="#" class="hover:underline decoration-4 decoration-yellow-400">Terms of Service</a></li>
+                </ul>
+                <p class="mt-8 text-xs font-bold text-gray-400">© 2024 HOSHI KEYCHAIN.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/6282181963337?text=Halo%20Admin%20Hoshi%2C%20saya%20butuh%20bantuan." target="_blank" class="fixed bottom-8 right-8 z-50 bg-green-500 border-2 border-black text-white p-4 rounded-full shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] transition-all flex items-center gap-2 group">
+        <span class="font-black uppercase hidden group-hover:block">Hubungi Kami</span>
+        <i data-lucide="message-circle" class="w-6 h-6"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script>
+        // Initialize Icons
+        lucide.createIcons();
+
+        // Mobile Menu Logic
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html><!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOSHI.ID - Custom Anime Keychains</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        /* Custom Selection Color to match the design */
+        ::selection {
+            background-color: black;
+            color: #facc15; /* Yellow-400 */
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-yellow-50 font-sans text-black">
+
+    <!-- Navbar: Thick Borders & Brutalist Layout -->
+    <nav class="sticky top-0 z-50 bg-white border-b-4 border-black">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                
+                <!-- Logo Area -->
+                <div class="flex items-center gap-2 cursor-pointer hover:-rotate-2 transition-transform">
                     <div class="bg-black text-yellow-400 p-2 border-2 border-black rounded-none shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
                         <i data-lucide="star" class="h-6 w-6 fill-current"></i>
                     </div>
@@ -394,4 +816,5 @@
         });
     </script>
 </body>
+
 </html>
